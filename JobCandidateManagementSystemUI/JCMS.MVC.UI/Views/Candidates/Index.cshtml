@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="text-align:center" class="page-header">Job Candidate Management System</h2>
+<div>
+    @if (TempData["UserMessage"] != null)
+    {
+        <div class="alert">
+            <strong>@TempData["UserMessage"]</strong>
+        </div>
+    }
+</div>
+

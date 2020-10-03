@@ -1,0 +1,10 @@
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.DataModelLayer\bin\Debug\JCMS.DataModelLayer.dll.config
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.DataModelLayer\bin\Debug\JCMS.DataModelLayer.dll
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.DataModelLayer\bin\Debug\JCMS.DataModelLayer.pdb
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.DataModelLayer\bin\Debug\EntityFramework.dll
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.DataModelLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.DataModelLayer\bin\Debug\EntityFramework.xml
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.DataModelLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.DataModelLayer\obj\Debug\JCMS.DataModelLayer.dll
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.DataModelLayer\obj\Debug\JCMS.DataModelLayer.pdb
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.DataModelLayer\obj\Debug\JCMS.DataModelLayer.csprojResolveAssemblyReference.cache

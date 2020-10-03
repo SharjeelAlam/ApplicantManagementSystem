@@ -1,0 +1,62 @@
+﻿@using JCMS.Web.MVC.Models
+@{
+    ViewBag.Title = "Edit Candidate";
+}
+@model Candidate
+
+<h2 style="text-align:center;text-transform:capitalize">Edit Candidate</h2>
+<div style="text-transform:uppercase;text-align:center;display:block;padding-top:15px">
+    <form method="post" style="display:inline-block;margin-left:auto;margin-right:auto">
+        <table style="text-align:left;font-weight:bold">
+            <tr>
+                <td>ID</td>
+                <td><input id="textId" name="id" readonly="readonly" value="@(((Candidate)ViewData["candidate"]).id)" /></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input id="textFirstName" name="firstName" value="@(((Candidate)ViewData["candidate"]).firstName)"/></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input id="textLastName" name="lastName" value="@(((Candidate)ViewData["candidate"]).lastName)"/></td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td><input id="textEmailAddress" name="email" value="@(((Candidate)ViewData["candidate"]).email)"/></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input id="textAge" name="age" value="@(((Candidate)ViewData["candidate"]).age)"/></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input id="textCity" name="city" value="@(((Candidate)ViewData["candidate"]).city)"/></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input id="textAddress" name="address" value="@(((Candidate)ViewData["candidate"]).address)"/></td>
+            </tr>
+            <tr>
+                <td>Experience (Years)</td>
+                <td><input id="textYearsOfExperience" name="yearsOfExperience" value="@(((Candidate)ViewData["candidate"]).yearsOfExperience)"/></td>
+            </tr>
+            <tr>
+                <td>Programming Language</td>
+                <td><input id="textPreferredProgrammingLanguage" name="preferredProgrammingLanguage" value="@(((Candidate)ViewData["candidate"]).preferredProgrammingLanguage)"/></td>
+            </tr>
+            <tr>
+                <td>Applied For Position</td>
+                <td><input id="textPositionAppliedTo" name="positionAppliedTo" value="@(((Candidate)ViewData["candidate"]).positionAppliedTo)" /></td>
+            </tr>
+            <tr>
+                <td>Application Status</td>
+                <td><div style="width:100%">@Html.EnumDropDownListFor(c => c.status, new { @style = "width:100%" })</div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="btnUpdateCandidate" type="submit" style="width:100%;display:block;text-align:center">Update</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+

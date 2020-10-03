@@ -1,0 +1,14 @@
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\bin\Debug\JCMS.RestAPI.Test.exe.config
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\bin\Debug\JCMS.RestAPI.Test.exe
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\bin\Debug\JCMS.RestAPI.Test.pdb
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\bin\Debug\RestSharp.dll
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\bin\Debug\EntityFramework.dll
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\bin\Debug\RestSharp.xml
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\bin\Debug\EntityFramework.xml
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\obj\Debug\JCMS.RestAPI.Test.csprojResolveAssemblyReference.cache
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\obj\Debug\JCMS.RestAPI.Test.exe
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\obj\Debug\JCMS.RestAPI.Test.pdb
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Sharjeel\Documents\Work\Work\.Net Projects\JobCandidateManagementSystem\JCMS.RestAPI.Test\bin\Debug\Newtonsoft.Json.xml

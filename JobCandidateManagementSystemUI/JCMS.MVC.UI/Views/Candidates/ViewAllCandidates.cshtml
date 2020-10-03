@@ -1,0 +1,96 @@
+﻿@using JCMS.Web.MVC.Models;
+@model Candidate
+@{
+    ViewBag.Title = "ViewAllCandidates";
+    WebGrid candidateGrid = new WebGrid(source: (List<Candidate>)ViewData["candidateList"], canSort: true, canPage: true, rowsPerPage: 5);
+}
+<style type="text/css">
+    body {
+        font-family: Arial;
+        font-size: 10pt;
+    }
+
+    .Grid {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+    }
+
+        .Grid th {
+            background-color: #F7F7F7;
+            font-weight: bold;
+        }
+
+        .Grid th, .Grid td {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .Grid, .Grid table td {
+            border: 0px solid #ccc;
+        }
+
+            .Grid th a, .Grid th a:visited {
+                color: #333;
+            }
+</style>
+
+
+<h2 style="text-align:center;text-transform:capitalize">View Candidates</h2>
+<div style="height:auto;padding-bottom:4px">
+    <form method="get">
+        <text>FILTER NAME:</text>
+        <input type="search" name="searchBox" />
+    </form>
+</div>
+<div style="height:auto">
+     @candidateGrid.GetHtml(htmlAttributes: new { @id = "WebGrid", @class = "Grid" },
+        columns: candidateGrid.Columns(
+                 candidateGrid.Column("id", "ID"),
+                 candidateGrid.Column("firstName", "FIRST NAME"),
+                 candidateGrid.Column("lastName", "LAST NAME"),
+                 candidateGrid.Column("email", "EMAIL"),
+                 candidateGrid.Column("age", "AGE"),
+                 candidateGrid.Column("city", "CITY"),
+                 candidateGrid.Column("address", "ADDRESS"),
+                 candidateGrid.Column("positionAppliedTo", "APPLIED POSITION"),
+                 candidateGrid.Column("yearsOfExperience", "TOTAL EXPERIENCE(yrs)"),
+                 candidateGrid.Column("preferredProgrammingLanguage", "PROGRAMMING LANGUAGE"),
+                 candidateGrid.Column("status", "APPLICATION STATUS"),
+                 candidateGrid.Column("", null, canSort: false, format: @<text>@item.GetSelectLink("select candidate")</text>)))
+      <br />
+    <!-- Added this script section for testing selected row highlighting-->
+    <!--
+        <script type="text/javascript">
+        var tr = $('#WebGrid').find('tr');
+        $("tr").click(function () { $(this).css('background', 'yellow'); });
+        $("td").click(function () { $(this).css('background', 'lightblue'); });
+        </script> 
+    -->
+
+    @if (candidateGrid.HasSelection)
+    {
+        Candidate selectedCandidate = (Candidate)candidateGrid.SelectedRow.Value;
+        int candidateId = selectedCandidate.id;
+
+        <div style="width:800px;text-align:center;font-size:medium;padding-left:450px">
+            <table cellpadding="0">
+                <tr>
+                    <td><text style="font-weight:bold">SELECTED CANDIDATE</text></td>
+                    </tr>
+                <tr>
+                    <td><input type="text" name="selectedCandidateTextBox" style="text-align:center;width:194px" value="@selectedCandidate.firstName @selectedCandidate.lastName" readonly></td>
+                    </tr>
+            </table>
+        </div>
+    <div style="width:1000px;text-align:center;font-size:medium;padding-left:450px;padding-top:10px">
+                <table>
+                    <tr>
+                        <td style="font-weight:bold;border-style:outset">@Html.ActionLink("EDIT", "EditCandidate", new { candidateId }, new { @class = "btn-primary navbar-brand" })</td>
+                        <td style="padding-left:5px"></td>
+                        <td style="font-weight:bold;border-style:outset">@Html.ActionLink("DELETE", "DeleteCandidate", new { candidateId }, new { @class = "navbar-brand btn-primary" })</td>
+                    </tr>
+                </table>
+    </div>
+        //Html.RenderAction("ViewAllCandidates", selectedCandidate.id);
+    }
+</div>
